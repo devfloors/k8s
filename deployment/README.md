@@ -1,4 +1,4 @@
-### deployment 롤링 업데이트
+## deployment 롤링 업데이트
 
 ```
 $ kubectl create -f deployment.yaml --record=true
