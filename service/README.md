@@ -16,4 +16,4 @@
 
 -   서비스가 다수의 포드로 구성하면 웹서비스의 세션이 유지되지 않음
 -   이를 위해 처음 들어왔던 클라이언트 ip를 그대로 유지해주는 방법이 필요
--   sessionAffinity: ClientIP라는 옵션을 주면 해결
+-   sessionAffinity: ClientIP라는 옵션을 주면 해결(클라이언트가 처음 접속한 pod에만 접속함)
