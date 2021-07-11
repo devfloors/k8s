@@ -14,3 +14,11 @@
 -   gcePersistentDisk: 구글 컴퓨트 엔진 영구 디스크 마운드
 -   persistentVolumeClaim: 사용자가 특정 클라우드 환경의 세부 사항을 모른채 GCE PersistentDisk 또는 iSCSI볼륨과 같은 내구성 스토리지를 요구할 수 있는 방법
 -   configMap, Secret, downwardAPI: 특수한 유형의 볼륨
+
+# storage
+
+## 포드 개발자 입장에서의 추상화
+
+-   애플리케이션을 배포하는 개발자가 스토리지 기술의 종류를 몰라도 상관없도록 하는 것이 이상적
+-   인프라 관련 처리는 클러스터 관리자의 유일한 도메인
+-   pv와 pvc를 사용해 관리자와 사용자의 영역을 나눔
