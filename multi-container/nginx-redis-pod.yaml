@@ -5,7 +5,7 @@ metadata:
 spec:
     containers:
         - name: nginx
-          image: busybox
+          image: nginx
           ports:
               - containerPort: 80
         - name: redis
