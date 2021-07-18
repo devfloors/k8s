@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: kttp-go
+spec:
+    containers:
+        - name: http-go
+          image: gasbugs/http-go
+    nodeName:
+        - work1
